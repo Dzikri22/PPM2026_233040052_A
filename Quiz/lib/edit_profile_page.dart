@@ -87,17 +87,17 @@ class _EditProfilePageState extends State<EditProfilePage> {
                                   imagePath!,
                                   fit: BoxFit.cover,
                                   errorBuilder: (context, error, stackTrace) {
-                                    return Image.asset('asset/foto_saya1.jpg', fit: BoxFit.cover);
+                                    return Image.asset('asset/foto_baru.jpg', fit: BoxFit.cover);
                                   },
                                 )
                               : Image.file(
                                   File(imagePath!),
                                   fit: BoxFit.cover,
                                   errorBuilder: (context, error, stackTrace) {
-                                    return Image.asset('asset/foto_saya1.jpg', fit: BoxFit.cover);
+                                    return Image.asset('asset/foto_baru.jpg', fit: BoxFit.cover);
                                   },
                                 ))
-                          : Image.asset('asset/foto_saya1.jpg', fit: BoxFit.cover),
+                          : Image.asset('asset/foto_baru.jpg', fit: BoxFit.cover),
                     ),
                   ),
                   Positioned(

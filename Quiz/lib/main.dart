@@ -29,12 +29,12 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   // Data Profil Utama
-  String nama = 'M Sufi Nadziffa R';
-  String tentangSaya = 'Saat ini saya berfokus pada pengembangan dashboard keuangan klinik dan pembuatan aplikasi mobile Word Reminder.';
+  String nama = 'Dzikrie Izzy Kurniawan';
+  String tentangSaya = 'mahasiswa teknik informatika yang senang mempelajari teknologi dan pengembangan perangat lunak';
   String pendidikan = 'Teknik Informatika Universitas Pasundan';
-  String kontak = 'SufiNadziffa@student.unpas.ac.id';
+  String kontak = 'dzikriizzy111@student.unpas.ac.id';
   String pengalamanStatis = 'Freelance Mobile Developer\nFreelance Web Developer';
-  String proyek = '• Dashboard Keuangan Klinik\n• Word Reminder (Aplikasi kuis dan pengingat kosakata)';
+  String proyek = '• Website Portolio Pribadi\n• Aplikasi Pencatatan Pengeluaran';
   List<String> skills = ['Flutter', 'Laravel', 'Java', 'PHP', 'UI/UX'];
   String? imagePath;
 
@@ -127,17 +127,17 @@ class _ProfilePageState extends State<ProfilePage> {
                                   imagePath!,
                                   fit: BoxFit.cover,
                                   errorBuilder: (context, error, stackTrace) {
-                                    return Image.asset('asset/foto_saya1.jpg', fit: BoxFit.cover);
+                                    return Image.asset('asset/foto_baru.jpg', fit: BoxFit.cover);
                                   },
                                 )
                               : Image.file(
                                   File(imagePath!),
                                   fit: BoxFit.cover,
                                   errorBuilder: (context, error, stackTrace) {
-                                    return Image.asset('asset/foto_saya1.jpg', fit: BoxFit.cover);
+                                    return Image.asset('asset/foto_baru.jpg', fit: BoxFit.cover);
                                   },
                                 ))
-                          : Image.asset('asset/foto_saya1.jpg', fit: BoxFit.cover),
+                          : Image.asset('asset/foto_baru.jpg', fit: BoxFit.cover),
                     ),
                   ),
                   const SizedBox(height: 14),
